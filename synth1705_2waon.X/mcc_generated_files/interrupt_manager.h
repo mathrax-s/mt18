@@ -1,24 +1,26 @@
 /**
-  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Header File
+  Generated Interrupt Manager Header File
 
   @Company:
     Microchip Technology Inc.
 
   @File Name:
-    mcc.h
+    interrupt_manager.h
 
   @Summary:
-    This is the mcc.h file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+    This is the Interrupt Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
   @Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+    This header file provides implementations for global interrupt handling.
+    For individual peripheral handlers please see the peripheral driver for
+    all modules selected in the GUI.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.65.2
         Device            :  PIC16F1705
-        Driver Version    :  2.00
+        Driver Version    :  1.03
     The generated drivers are tested against the following:
         Compiler          :  XC8 1.45 or later
-        MPLAB             :  MPLAB X 4.15
+        MPLAB 	          :  MPLAB X 4.15
 */
 
 /*
@@ -44,57 +46,9 @@
     SOFTWARE.
 */
 
-#ifndef MCC_H
-#define	MCC_H
-#include <xc.h>
-#include "pin_manager.h"
-#include <stdint.h>
-#include <stdbool.h>
-#include "interrupt_manager.h"
-#include "tmr2.h"
-#include "opa2.h"
-#include "dac.h"
-#include "mtouch/mtouch.h"
+#ifndef INTERRUPT_MANAGER_H
+#define INTERRUPT_MANAGER_H
 
-#include <math.h>
-#include "../wavetable.h"
-#include "../pitches.h"
-
-#define _XTAL_FREQ  32000000
-
-#define _MAX_CHORUS 2
-#define _WAVE_F 32
-
-//?????????
-unsigned int waveData; //?????????
-unsigned char voice_on; //??????????????
-unsigned char synth_waveData; //???????????
-unsigned char env; //?????????????
-unsigned int envelopeCount; //???????????????
-unsigned char envelopeValue; //???????????????
-
-unsigned char dat_d; //???????????
-unsigned char dat_f; //???????????
-unsigned int pos_d; //???????????
-unsigned int pos_f; //???????????
-unsigned int pos; //???????????
-
-//??????????
-unsigned int pitch;
-unsigned int count;
-unsigned int ENV_DELAY; //?????????
-/**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the device to the default states configured in the
- *                  MCC GUI
- * @Example
-    SYSTEM_Initialize(void);
- */
-void SYSTEM_Initialize(void);
 
 /**
  * @Param
@@ -102,26 +56,60 @@ void SYSTEM_Initialize(void);
  * @Returns
     none
  * @Description
-    Initializes the oscillator to the default states configured in the
- *                  MCC GUI
+    This macro will enable global interrupts.
  * @Example
-    OSCILLATOR_Initialize(void);
+    INTERRUPT_GlobalInterruptEnable();
  */
-void OSCILLATOR_Initialize(void);
+#define INTERRUPT_GlobalInterruptEnable() (INTCONbits.GIE = 1)
+
 /**
  * @Param
     none
  * @Returns
     none
  * @Description
-    Initializes the WDT module to the default states configured in the
- *                  MCC GUI
+    This macro will disable global interrupts.
  * @Example
-    WDT_Initialize(void);
+    INTERRUPT_GlobalInterruptDisable();
  */
-void WDT_Initialize(void);
+#define INTERRUPT_GlobalInterruptDisable() (INTCONbits.GIE = 0)
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    This macro will enable peripheral interrupts.
+ * @Example
+    INTERRUPT_PeripheralInterruptEnable();
+ */
+#define INTERRUPT_PeripheralInterruptEnable() (INTCONbits.PEIE = 1)
 
-#endif	/* MCC_H */
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    This macro will disable peripheral interrupts.
+ * @Example
+    INTERRUPT_PeripheralInterruptDisable();
+ */
+#define INTERRUPT_PeripheralInterruptDisable() (INTCONbits.PEIE = 0)
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Main interrupt service routine. Calls module interrupt handlers.
+ * @Example
+    INTERRUPT_InterruptManager();
+ */
+void interrupt INTERRUPT_InterruptManager(void);
+
+
+#endif  // INTERRUPT_MANAGER_H
 /**
  End of File
 */

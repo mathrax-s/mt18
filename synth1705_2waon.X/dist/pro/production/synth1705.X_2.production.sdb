@@ -1,0 +1,1061 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PIC14E SPEEDOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1705 ]
+[d frameptr 6 ]
+"71 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_button.c
+[e E4949 mtouch_button_names `uc
+Button0 0
+Button1 1
+]
+[e E4904 mtouch_sensor_names `uc
+Sensor_AN4 0
+Sensor_AN5 1
+]
+[e E5008 mtouch_button_state `uc
+MTOUCH_BUTTON_STATE_initializing 0
+MTOUCH_BUTTON_STATE_notPressed 1
+MTOUCH_BUTTON_STATE_pressed 2
+]
+"114 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[e E4937 mtouch_sensor_names `uc
+Sensor_AN4 0
+Sensor_AN5 1
+]
+"144
+[e E4940 mtouch_sensor_error `c
+MTOUCH_SENSOR_ERROR_none 0
+MTOUCH_SENSOR_ERROR_invalid_index -1
+MTOUCH_SENSOR_ERROR_interrupt_notEnabled -2
+MTOUCH_SENSOR_ERROR_invalid_calibrate -3
+MTOUCH_SENSOR_ERROR_tooManyRetries -4
+MTOUCH_SENSOR_ERROR_scanOverrun -5
+MTOUCH_SENSOR_ERROR_interruptedScan -6
+]
+"137 /Users/shozo/Downloads/synth1705.X 2/main.c
+[e E4898 mtouch_button_names `uc
+Button0 0
+Button1 1
+]
+[e E4853 mtouch_sensor_names `uc
+Sensor_AN4 0
+Sensor_AN5 1
+]
+"4 /Applications/microchip/xc8/v1.45/sources/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"33 /Applications/microchip/xc8/v1.45/sources/common/abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"62 /Applications/microchip/xc8/v1.45/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 /Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 /Applications/microchip/xc8/v1.45/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"4 /Applications/microchip/xc8/v1.45/sources/common/lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"4 /Applications/microchip/xc8/v1.45/sources/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"88 /Users/shozo/Downloads/synth1705.X 2/main.c
+[v _soundPlay soundPlay `(v  1 e 1 0 ]
+"103
+[v _main main `(v  1 e 1 0 ]
+"58 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/dac.c
+[v _DAC_Initialize DAC_Initialize `(v  1 e 1 0 ]
+"66
+[v _DAC_SetOutput DAC_SetOutput `(v  1 e 1 0 ]
+"52 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"63
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"79
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"67 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+"81
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(uc  1 e 1 0 ]
+"108
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+"138 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+"150
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+"168
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+"177
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+"194
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+"213
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+"248
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+"272
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+"280
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+"333
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(uc  1 e 1 0 ]
+"349
+[v _MTOUCH_Button_Deviation_Get MTOUCH_Button_Deviation_Get `(c  1 e 1 0 ]
+"357
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+"406
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+"422
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+"428
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+"452
+[v _Button_Baseline_Get_helper Button_Baseline_Get_helper `(ui  1 s 2 Button_Baseline_Get_helper ]
+"470
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+"66 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_random.c
+[v _MTOUCH_Random MTOUCH_Random `(uc  1 e 1 0 ]
+"143 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E4940  1 e 1 0 ]
+"172
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+"187
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+"203
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(uc  1 e 1 0 ]
+"220
+[v _Sensor_Service Sensor_Service `(E4940  1 s 1 Sensor_Service ]
+"257
+[v _Sensor_Acquisition Sensor_Acquisition `(E4940  1 s 1 Sensor_Acquisition ]
+"292
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E4940  1 s 1 Sensor_Acq_ExecutePacket ]
+"343
+[v _MTOUCH_Delay MTOUCH_Delay `(v  1 s 1 MTOUCH_Delay ]
+"359
+[v _Sensor_Acq_ExecuteScan Sensor_Acq_ExecuteScan `(v  1 s 1 Sensor_Acq_ExecuteScan ]
+"399
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(ui  1 e 2 0 ]
+"409
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+"429
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+"441
+[v _Sensor_setScanFunction Sensor_setScanFunction `(v  1 s 1 Sensor_setScanFunction ]
+"460
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+"474
+[v _Sensor_isEnabled Sensor_isEnabled `(uc  1 s 1 Sensor_isEnabled ]
+"489
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+"494
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+"508
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(uc  1 e 1 0 ]
+"514
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+"526
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+"535
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(uc  1 e 1 0 ]
+"543
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+"548
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+"74 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor_scan.c
+[v _MTOUCH_CVD_ScanA_0 MTOUCH_CVD_ScanA_0 `(v  1 e 1 0 ]
+"137
+[v _MTOUCH_CVD_ScanB_0 MTOUCH_CVD_ScanB_0 `(v  1 e 1 0 ]
+"201
+[v _MTOUCH_CVD_ScanA_1 MTOUCH_CVD_ScanA_1 `(v  1 e 1 0 ]
+"264
+[v _MTOUCH_CVD_ScanB_1 MTOUCH_CVD_ScanB_1 `(v  1 e 1 0 ]
+"58 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/opa2.c
+[v _OPA2_Initialize OPA2_Initialize `(v  1 e 1 0 ]
+"57 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"69 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"120
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"129
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"136
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+[s S559 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"372 /Applications/microchip/xc8/v1.45/include/pic16f1705.h
+[s S568 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S573 . 1 `S559 1 . 1 0 `S568 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES573  1 e 1 @11 ]
+[s S900 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"548
+[s S909 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIF 1 0 :1:2 
+]
+[u S912 . 1 `S900 1 . 1 0 `S909 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES912  1 e 1 @17 ]
+"909
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"929
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"949
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1020
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1065
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S480 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"1080
+[u S487 . 1 `S480 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES487  1 e 1 @142 ]
+[s S872 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1136
+[s S881 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIE 1 0 :1:2 
+]
+[u S884 . 1 `S872 1 . 1 0 `S881 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES884  1 e 1 @145 ]
+[s S1033 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1311
+[s S1040 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S1047 . 1 `S1033 1 . 1 0 `S1040 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES1047  1 e 1 @149 ]
+"1428
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1487
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1545
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1617
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @154 ]
+"1679
+[v _ADRES ADRES `VEus  1 e 2 @155 ]
+"1726
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S605 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"1751
+[s S609 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S617 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S620 . 1 `S605 1 . 1 0 `S609 1 . 1 0 `S617 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES620  1 e 1 @157 ]
+"1806
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1859
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
+"1907
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"1952
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2294
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2403
+[v _DAC1CON0 DAC1CON0 `VEuc  1 e 1 @280 ]
+"2513
+[v _DAC1CON1 DAC1CON1 `VEuc  1 e 1 @281 ]
+"2679
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2724
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+[s S463 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+]
+"2739
+[u S470 . 1 `S463 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES470  1 e 1 @398 ]
+"3810
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3860
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+[s S446 . 1 `uc 1 WPUC0 1 0 :1:0 
+`uc 1 WPUC1 1 0 :1:1 
+`uc 1 WPUC2 1 0 :1:2 
+`uc 1 WPUC3 1 0 :1:3 
+`uc 1 WPUC4 1 0 :1:4 
+`uc 1 WPUC5 1 0 :1:5 
+]
+"3875
+[u S453 . 1 `S446 1 . 1 0 ]
+[v _WPUCbits WPUCbits `VES453  1 e 1 @526 ]
+"5308
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"5353
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"6668
+[v _OPA2CON OPA2CON `VEuc  1 e 1 @1301 ]
+"12405
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"13033
+[v _PLLR PLLR `VEb  1 e 0 @1238 ]
+"50 /Users/shozo/Downloads/synth1705.X 2/main.c
+[v _scale scale `[24]uc  1 e 24 0 ]
+"14 /Users/shozo/Downloads/synth1705.X 2/wavetable.h
+[v _waveTable waveTable `VE[256]uc  1 e 256 @8944 ]
+"38
+[v _envelopeTable envelopeTable `VE[256]uc  1 e 256 @8688 ]
+"93
+[v _onkai_d onkai_d `[74]uc  1 e 74 0 ]
+"172
+[v _onkai_f onkai_f `[74]uc  1 e 74 0 ]
+"77 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mcc.h
+[v _voice_on voice_on `[2]uc  1 e 2 0 ]
+"79
+[v _env env `[2]ui  1 e 4 0 ]
+"80
+[v _envelopeCount envelopeCount `[2]uc  1 e 2 0 ]
+"83
+[v _dat_d dat_d `[2]uc  1 e 2 0 ]
+"84
+[v _dat_f dat_f `[2]uc  1 e 2 0 ]
+"85
+[v _pos_d pos_d `[2]uc  1 e 2 0 ]
+"86
+[v _pos_f pos_f `[2]ui  1 e 4 0 ]
+"87
+[v _pos pos `[2]uc  1 e 2 0 ]
+"89
+[v _scaleHigh scaleHigh `VE[13]uc  1 e 13 0 ]
+"92
+[v _scaleLow scaleLow `VE[13]uc  1 e 13 0 ]
+"97
+[v _ENV_DELAY ENV_DELAY `ui  1 e 2 0 ]
+"47 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch.c
+[v _mtouch_time_toScan mtouch_time_toScan `uc  1 s 1 mtouch_time_toScan ]
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"71 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_button.c
+[v _mtouch_button_init mtouch_button_init `DC[2]S84  1 e 32 0 ]
+"91
+[v _mtouch_button mtouch_button `[2]S84  1 s 32 mtouch_button ]
+"125
+[v _Button_StateMachine Button_StateMachine `[3]*.37(v  1 e 6 0 ]
+[s S408 . 1 `uc 1 packet_done 1 0 :1:0 
+`uc 1 interrupted 1 0 :1:1 
+]
+"121 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _sensor_globalFlags sensor_globalFlags `VES408  1 s 1 sensor_globalFlags ]
+"122
+[v _currentScannSensor currentScannSensor `E4937  1 s 1 currentScannSensor ]
+"123
+[v _packet_counter packet_counter `uc  1 s 1 packet_counter ]
+"124
+[v _packet_sample packet_sample `ui  1 s 2 packet_sample ]
+"125
+[v _sample_delay sample_delay `uc  1 s 1 sample_delay ]
+"126
+[v _Sensor_scanA Sensor_scanA `*.37(v  1 s 2 Sensor_scanA ]
+"127
+[v _Sensor_scanB Sensor_scanB `*.37(v  1 s 2 Sensor_scanB ]
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+"133
+[v _mtouch_sensor mtouch_sensor `[2]S421  1 s 18 mtouch_sensor ]
+"63 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
+"103 /Users/shozo/Downloads/synth1705.X 2/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"114
+[v main@i i `i  1 a 2 65 ]
+"130
+[v main@ave ave `f  1 a 3 57 ]
+"128
+[v main@s s `i  1 a 2 63 ]
+"131
+[v main@count count `i  1 a 2 61 ]
+"134
+[v main@ms ms `i  1 a 2 55 ]
+"133
+[v main@ss ss `i  1 a 2 53 ]
+"129
+[v main@state state `i  1 a 2 51 ]
+"125
+[v main@d d `c  1 a 1 60 ]
+"178
+} 0
+"88
+[v _soundPlay soundPlay `(v  1 e 1 0 ]
+{
+[v soundPlay@n n `uc  1 a 1 wreg ]
+[v soundPlay@n n `uc  1 a 1 wreg ]
+[v soundPlay@onkai onkai `uc  1 p 1 0 ]
+"90
+[v soundPlay@n n `uc  1 a 1 1 ]
+"101
+} 0
+"62 /Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 18 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 22 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 21 ]
+[v ___ftmul@exp exp `uc  1 a 1 17 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 8 ]
+[v ___ftmul@f2 f2 `f  1 p 3 11 ]
+"157
+} 0
+"4 /Applications/microchip/xc8/v1.45/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"56 /Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 33 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 37 ]
+[v ___ftdiv@exp exp `uc  1 a 1 36 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 32 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 23 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 26 ]
+"86
+} 0
+"86 /Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 49 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 48 ]
+[v ___ftadd@sign sign `uc  1 a 1 47 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 38 ]
+[v ___ftadd@f2 f2 `f  1 p 3 41 ]
+"148
+} 0
+"33 /Applications/microchip/xc8/v1.45/sources/common/abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+{
+[v ___abtoft@c c `c  1 a 1 wreg ]
+"36
+[v ___abtoft@sign sign `uc  1 a 1 12 ]
+"33
+[v ___abtoft@c c `c  1 a 1 wreg ]
+"38
+[v ___abtoft@c c `c  1 a 1 13 ]
+"44
+} 0
+"62 /Applications/microchip/xc8/v1.45/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"50 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"61
+} 0
+"79
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"69 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"129
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"131
+} 0
+"57 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"96
+} 0
+"63 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"58 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/opa2.c
+[v _OPA2_Initialize OPA2_Initialize `(v  1 e 1 0 ]
+{
+"62
+} 0
+"67 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"172 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+{
+"174
+[v MTOUCH_Sensor_InitializeAll@sensor sensor `E4937  1 a 1 5 ]
+"179
+} 0
+"143
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E4940  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Initialize@sensor sensor `E4937  1 a 1 wreg ]
+[v MTOUCH_Sensor_Initialize@sensor sensor `E4937  1 a 1 wreg ]
+[v MTOUCH_Sensor_Initialize@sensor sensor `E4937  1 a 1 4 ]
+"164
+} 0
+"460
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Enable@sensor sensor `E4937  1 a 1 wreg ]
+[v MTOUCH_Sensor_Enable@sensor sensor `E4937  1 a 1 wreg ]
+"462
+[v MTOUCH_Sensor_Enable@sensor sensor `E4937  1 a 1 3 ]
+"464
+} 0
+"150 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+{
+"152
+[v MTOUCH_Button_InitializeAll@button button `E4949  1 a 1 3 ]
+"160
+} 0
+"58 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/dac.c
+[v _DAC_Initialize DAC_Initialize `(v  1 e 1 0 ]
+{
+"64
+} 0
+"81 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(uc  1 e 1 0 ]
+{
+"101
+} 0
+"108
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+{
+"111
+} 0
+"272 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+{
+"274
+[v MTOUCH_Button_Tick@i i `uc  1 a 1 3 ]
+"279
+} 0
+"280
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+{
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Tick_helper@button button `*.4S84  1 a 1 wreg ]
+[v Button_Tick_helper@button button `*.4S84  1 a 1 wreg ]
+"283
+"280
+[v Button_Tick_helper@button button `*.4S84  1 a 1 2 ]
+"291
+} 0
+"526 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+"528
+[v MTOUCH_Sensor_Sampled_ResetAll@sensor sensor `*.4S421  1 a 1 2 ]
+"533
+} 0
+"543
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_Sampled_Reset@sensor sensor `*.4S421  1 a 1 wreg ]
+[v Sensor_Sampled_Reset@sensor sensor `*.4S421  1 a 1 wreg ]
+"545
+"543
+[v Sensor_Sampled_Reset@sensor sensor `*.4S421  1 a 1 0 ]
+"546
+} 0
+"203
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(uc  1 e 1 0 ]
+{
+"205
+[v MTOUCH_Sensor_SampleAll@sensor sensor `E4937  1 a 1 22 ]
+"212
+} 0
+"220
+[v _Sensor_Service Sensor_Service `(E4940  1 s 1 Sensor_Service ]
+{
+[v Sensor_Service@name name `E4937  1 a 1 wreg ]
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+"222
+[v Sensor_Service@sensor sensor `*.4S421  1 a 1 21 ]
+"223
+[v Sensor_Service@error error `E4940  1 a 1 20 ]
+"220
+[v Sensor_Service@name name `E4937  1 a 1 wreg ]
+"222
+[v Sensor_Service@name name `E4937  1 a 1 19 ]
+"244
+} 0
+"548
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_setSampled@sensor sensor `*.4S421  1 a 1 wreg ]
+[v Sensor_setSampled@sensor sensor `*.4S421  1 a 1 wreg ]
+"550
+"548
+[v Sensor_setSampled@sensor sensor `*.4S421  1 a 1 0 ]
+"551
+} 0
+"409
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_RawSample_Update@sensor sensor `*.4S421  1 a 1 wreg ]
+[v Sensor_RawSample_Update@sensor sensor `*.4S421  1 a 1 wreg ]
+"411
+"409
+[v Sensor_RawSample_Update@sensor sensor `*.4S421  1 a 1 0 ]
+"421
+} 0
+"429
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+{
+[v Sensor_DefaultCallback@sensor sensor `E4937  1 p 1 0 ]
+} 0
+"257
+[v _Sensor_Acquisition Sensor_Acquisition `(E4940  1 s 1 Sensor_Acquisition ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_Acquisition@sensor sensor `*.4S421  1 a 1 wreg ]
+"260
+[v Sensor_Acquisition@retry retry `uc  1 a 1 17 ]
+"257
+[v Sensor_Acquisition@sensor sensor `*.4S421  1 a 1 wreg ]
+"260
+"257
+[v Sensor_Acquisition@sensor sensor `*.4S421  1 a 1 18 ]
+"284
+} 0
+"4 /Applications/microchip/xc8/v1.45/sources/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 0 ]
+"9
+} 0
+"494 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_setInactive@sensor sensor `*.4S421  1 a 1 wreg ]
+[v Sensor_setInactive@sensor sensor `*.4S421  1 a 1 wreg ]
+"496
+"494
+[v Sensor_setInactive@sensor sensor `*.4S421  1 a 1 0 ]
+"497
+} 0
+"489
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_setActive@sensor sensor `*.4S421  1 a 1 wreg ]
+[v Sensor_setActive@sensor sensor `*.4S421  1 a 1 wreg ]
+"491
+"489
+[v Sensor_setActive@sensor sensor `*.4S421  1 a 1 0 ]
+"492
+} 0
+"474
+[v _Sensor_isEnabled Sensor_isEnabled `(uc  1 s 1 Sensor_isEnabled ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_isEnabled@sensor sensor `*.4S421  1 a 1 wreg ]
+[v Sensor_isEnabled@sensor sensor `*.4S421  1 a 1 wreg ]
+"476
+"474
+[v Sensor_isEnabled@sensor sensor `*.4S421  1 a 1 0 ]
+"480
+} 0
+"292
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E4940  1 s 1 Sensor_Acq_ExecutePacket ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_Acq_ExecutePacket@sensor sensor `*.4S421  1 a 1 wreg ]
+"295
+[v Sensor_Acq_ExecutePacket@error error `E4940  1 a 1 11 ]
+"300
+[v Sensor_Acq_ExecutePacket@GIE_state GIE_state `uc  1 a 1 10 ]
+"298
+[v Sensor_Acq_ExecutePacket@ADCON2_temp ADCON2_temp `uc  1 a 1 9 ]
+"297
+[v Sensor_Acq_ExecutePacket@ADCON1_temp ADCON1_temp `uc  1 a 1 8 ]
+"296
+[v Sensor_Acq_ExecutePacket@ADCON0_temp ADCON0_temp `uc  1 a 1 7 ]
+"292
+[v Sensor_Acq_ExecutePacket@sensor sensor `*.4S421  1 a 1 wreg ]
+"295
+"292
+[v Sensor_Acq_ExecutePacket@sensor sensor `*.4S421  1 a 1 12 ]
+"341
+} 0
+"441
+[v _Sensor_setScanFunction Sensor_setScanFunction `(v  1 s 1 Sensor_setScanFunction ]
+{
+[s S421 . 9 `DCE4937 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `ui 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 acitve 1 8 :1:2 
+]
+[v Sensor_setScanFunction@sensor sensor `*.4S421  1 a 1 wreg ]
+[v Sensor_setScanFunction@sensor sensor `*.4S421  1 a 1 wreg ]
+"443
+"441
+[v Sensor_setScanFunction@sensor sensor `*.4S421  1 a 1 0 ]
+"445
+} 0
+"359
+[v _Sensor_Acq_ExecuteScan Sensor_Acq_ExecuteScan `(v  1 s 1 Sensor_Acq_ExecuteScan ]
+{
+"361
+[v Sensor_Acq_ExecuteScan@result result `ui  1 a 2 5 ]
+"391
+} 0
+"137 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor_scan.c
+[v _MTOUCH_CVD_ScanB_0 MTOUCH_CVD_ScanB_0 `(v  1 e 1 0 ]
+{
+"188
+} 0
+"264
+[v _MTOUCH_CVD_ScanB_1 MTOUCH_CVD_ScanB_1 `(v  1 e 1 0 ]
+{
+"315
+} 0
+"74
+[v _MTOUCH_CVD_ScanA_0 MTOUCH_CVD_ScanA_0 `(v  1 e 1 0 ]
+{
+"124
+} 0
+"201
+[v _MTOUCH_CVD_ScanA_1 MTOUCH_CVD_ScanA_1 `(v  1 e 1 0 ]
+{
+"251
+} 0
+"187 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+{
+"193
+} 0
+"66 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_random.c
+[v _MTOUCH_Random MTOUCH_Random `(uc  1 e 1 0 ]
+{
+"68
+[v MTOUCH_Random@seed seed `uc  1 s 1 seed ]
+"86
+} 0
+"343 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Delay MTOUCH_Delay `(v  1 s 1 MTOUCH_Delay ]
+{
+"345
+[v MTOUCH_Delay@i i `uc  1 a 1 0 ]
+"347
+} 0
+"168 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+{
+"170
+[v MTOUCH_Button_ServiceAll@button button `E4949  1 a 1 19 ]
+"175
+} 0
+"177
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+{
+[v Button_Service@name name `E4949  1 a 1 wreg ]
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"179
+[v Button_Service@button button `*.4S84  1 a 1 18 ]
+"177
+[v Button_Service@name name `E4949  1 a 1 wreg ]
+"179
+[v Button_Service@name name `E4949  1 a 1 17 ]
+"192
+} 0
+"535 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(uc  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E4937  1 a 1 wreg ]
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E4937  1 a 1 wreg ]
+"537
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E4937  1 a 1 3 ]
+"541
+} 0
+"508
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(uc  1 e 1 0 ]
+{
+"512
+} 0
+"213 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+{
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_NotPressed@button button `*.4S84  1 p 1 12 ]
+"246
+} 0
+"194
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+{
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Initializing@button button `*.4S84  1 p 1 12 ]
+"212
+} 0
+"248
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+{
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Pressed@button button `*.4S84  1 p 1 12 ]
+"264
+} 0
+"138
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_Initialize@name name `E4949  1 a 1 wreg ]
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"140
+[v MTOUCH_Button_Initialize@button button `*.4S84  1 a 1 1 ]
+"138
+[v MTOUCH_Button_Initialize@name name `E4949  1 a 1 wreg ]
+"140
+[v MTOUCH_Button_Initialize@name name `E4949  1 a 1 0 ]
+"148
+} 0
+"514 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+{
+"517
+} 0
+"470 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+{
+[v Button_DefaultCallback@button button `E4949  1 p 1 0 ]
+} 0
+"428
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+{
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Update@button button `*.4S84  1 a 1 wreg ]
+[v Button_Baseline_Update@button button `*.4S84  1 a 1 wreg ]
+"430
+"428
+[v Button_Baseline_Update@button button `*.4S84  1 a 1 6 ]
+"442
+} 0
+"422
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+{
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Initialize@button button `*.4S84  1 a 1 wreg ]
+[v Button_Baseline_Initialize@button button `*.4S84  1 a 1 wreg ]
+"424
+"422
+[v Button_Baseline_Initialize@button button `*.4S84  1 a 1 11 ]
+"426
+} 0
+"406
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+{
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update@button button `*.4S84  1 a 1 wreg ]
+[v Button_Reading_Update@button button `*.4S84  1 a 1 wreg ]
+"408
+"406
+[v Button_Reading_Update@button button `*.4S84  1 a 1 9 ]
+"420
+} 0
+"399 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(ui  1 e 2 0 ]
+{
+[v MTOUCH_Sensor_RawSample_Get@name name `E4937  1 a 1 wreg ]
+[v MTOUCH_Sensor_RawSample_Get@name name `E4937  1 a 1 wreg ]
+"401
+[v MTOUCH_Sensor_RawSample_Get@name name `E4937  1 a 1 6 ]
+"407
+} 0
+"4 /Applications/microchip/xc8/v1.45/sources/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 1 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 2 ]
+"51
+} 0
+"357 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+{
+[s S84 . 16 `DCE4949 1 name 1 0 `DCE4904 1 sensor 1 1 `E5008 1 state 1 2 `ui 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `ui 1 counter 2 10 `ui 1 baseline_count 2 12 `c 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Deviation_Update@button button `*.4S84  1 a 1 wreg ]
+"359
+[v Button_Deviation_Update@deviation deviation `l  1 a 4 10 ]
+"357
+[v Button_Deviation_Update@button button `*.4S84  1 a 1 wreg ]
+"361
+"357
+[v Button_Deviation_Update@button button `*.4S84  1 a 1 14 ]
+"377
+} 0
+"333
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(uc  1 e 1 0 ]
+{
+[v MTOUCH_Button_isPressed@name name `E4949  1 a 1 wreg ]
+[v MTOUCH_Button_isPressed@name name `E4949  1 a 1 wreg ]
+"335
+[v MTOUCH_Button_isPressed@name name `E4949  1 a 1 0 ]
+"339
+} 0
+"349
+[v _MTOUCH_Button_Deviation_Get MTOUCH_Button_Deviation_Get `(c  1 e 1 0 ]
+{
+[v MTOUCH_Button_Deviation_Get@name name `E4949  1 a 1 wreg ]
+[v MTOUCH_Button_Deviation_Get@name name `E4949  1 a 1 wreg ]
+"351
+[v MTOUCH_Button_Deviation_Get@name name `E4949  1 a 1 0 ]
+"355
+} 0
+"52 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"70
+} 0
+"120 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"127
+} 0
+"136
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"137
+[v TMR2_DefaultInterruptHandler@wv wv `ui  1 a 2 7 ]
+"138
+[v TMR2_DefaultInterruptHandler@i i `uc  1 a 1 9 ]
+"164
+} 0
+"4 /Applications/microchip/xc8/v1.45/sources/common/lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+{
+[v ___lbmod@dividend dividend `uc  1 a 1 wreg ]
+"6
+[v ___lbmod@rem rem `uc  1 a 1 4 ]
+"7
+[v ___lbmod@counter counter `uc  1 a 1 3 ]
+"4
+[v ___lbmod@dividend dividend `uc  1 a 1 wreg ]
+[v ___lbmod@divisor divisor `uc  1 p 1 0 ]
+"9
+[v ___lbmod@dividend dividend `uc  1 a 1 2 ]
+"18
+} 0
+"66 /Users/shozo/Downloads/synth1705.X 2/mcc_generated_files/dac.c
+[v _DAC_SetOutput DAC_SetOutput `(v  1 e 1 0 ]
+{
+[v DAC_SetOutput@inputData inputData `uc  1 a 1 wreg ]
+[v DAC_SetOutput@inputData inputData `uc  1 a 1 wreg ]
+"68
+[v DAC_SetOutput@inputData inputData `uc  1 a 1 0 ]
+"69
+} 0

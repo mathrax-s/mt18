@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>synth1705</name>
+            <name>synth1705_2waon</name>
             <creation-uuid>0d43507a-13a4-4341-93eb-1855c4463b40</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
